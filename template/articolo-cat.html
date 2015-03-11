@@ -1,0 +1,25 @@
+<div class="container">
+
+      <div class="starter-template">
+
+  <div class="" ng-model="filteredCategorie">
+   <!-- NOME CATEGORIA categoriaz <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
+    <a href="#/cat/{{categoriaz}}/{{catnumz}}/page/{{paginaback}}/articolo/{{prevItem}}" class="btn btn-default btn-left">&lt;</a>
+    <a href="#/cat/{{categoriaz}}/{{catnumz}}/page/{{paginaback}}/articolo/{{nextItem}}" class="btn btn-default btn-right">&gt;</a>
+    <!-- NOME CATEGORIA categoriaz <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
+     <a class="btn btn-default" href="#/cat/{{categoriaz}}/{{catnumz}}/page/{{paginaback}}" role="button">Back to page {{paginaback}} </a>
+    <div ng-bind-html="filteredCategorie[whichItem].title"></div>
+    
+    <div class="info">
+
+      <img ng-src="{{filteredCategorie[whichItem].featured_image.guid}}">
+
+      <div ng-bind-html="filteredCategorie[whichItem].content" align="justify"></div>
+    </div>
+  </div>
+
+ 
+
+        </div>
+
+</div><!-- /.container -->

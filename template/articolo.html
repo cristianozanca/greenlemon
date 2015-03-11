@@ -1,0 +1,23 @@
+<div class="container">
+
+      
+
+  <div class="starter-template" ng-model="filteredArticoli">
+  <!-- INSERIRE NOME CATEGORIA <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
+    <a href="#page/{{paginaback}}/articolo/{{prevItem}}" class="btn btn-default btn-left">&lt;</a>
+    <a href="#page/{{paginaback}}/articolo/{{nextItem}}" class="btn btn-default btn-right">&gt;</a>
+<!-- INSERIRE NOME CATEGORIA <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
+      <a class="btn btn-default" href="#page/{{paginaback}}" role="button">Back to page {{paginaback}} </a>
+    
+    <div ng-bind-html="filteredArticoli[whichItem].title"></div>
+    
+    <div class="info">
+      <!-- <h3>{{filteredArticoli[whichItem].excerpt}}</h3> -->
+      <img ng-src="{{filteredArticoli[whichItem].featured_image.guid}}">
+
+      <!-- <div ng-bind-html="filteredArticoli[whichItem].content" align="justify"></div> -->
+      <div ng-bind-html="filteredArticoli[whichItem].content" class="article-template"></div>
+    </div>
+  </div>
+
+</div><!-- /.container -->

@@ -1,0 +1,48 @@
+<!--
+  <div ng-include src="'template/menu.html'">
+  </div>
+
+  -->
+<!-- MENU HEAD FINE -->
+
+    <div class="container">
+
+      <div class="starter-template">
+        
+
+
+<div>
+ <pagination boundary-links="true" 
+          max-size="4"
+          items-per-page="itemsPerPage"
+          total-items="totalItems" 
+          ng-model="currentPage" 
+
+          previous-text="&lsaquo;"
+          next-text="&rsaquo;" 
+          first-text="&laquo;" 
+          last-text="&raquo;"
+  ></pagination> 
+
+
+  <table class="table table-hover">
+
+      <tbody>
+        <tr ng-repeat="post in filteredArticoli">
+          <td width="20%"><a ng-href="#/page/{{currentPage}}/articolo/{{filteredArticoli.indexOf(post)}}" ng-bind-html="post.title"></a><br>
+          <a ng-href="{{post.featured_image.source}}"><img ng-src="{{post.featured_image.attachment_meta.sizes.thumbnail.url}}"></a></td>
+          <td width="80%" ng-bind-html="post.excerpt" align="justify"></td>
+
+        </tr>
+      </tbody>
+    </table>
+
+     Go to page: <input type="number" ng-model="np" max="{{numeropagine}}" min="1"><button class="btn btn-info" ng-click="setPage(np)" ng-init="np=1" >submit</button><br> (max {{numeropagine}})
+ <br>
+ <br>
+
+</div>
+
+      </div>
+
+    </div><!-- /.container -->

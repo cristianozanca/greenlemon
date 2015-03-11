@@ -1,0 +1,117 @@
+/*
+Theme Name: Angularpress
+Theme URI: http://www.greatbeauty.eu/angularpresse
+Author: Cristiano Zanca
+Author URI: http://zanca.it
+Description: Angularjs Front-end theme for Wordpress.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: responsive, angularjs, javascript, wordpress
+Text Domain: angularpress
+ 
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+input[type="number"]{
+	margin-top: 10px;
+ height: 28px;
+ width: 60px;
+  }
+
+
+
+img {
+	max-width: 100%;
+	height: auto;
+	border: 0px;
+}
+
+
+body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 15px 15px;
+  text-align: center;
+
+}
+
+.article-template
+{
+  padding: 15px 15px;
+  text-align: left;
+}
+
+.btn-info {
+margin-left: 6px;
+padding: 4px 6px;
+}
+.navbar-inverse {
+background-color: #2F0;
+
+-webkit-box-shadow: 0 2px 8px -2px #5b5b5b;
+   -moz-box-shadow: 0 2px 8px -2px #5b5b5b;
+        box-shadow: 0 2px 8px -2px #5b5b5b;
+
+        border-bottom-color: transparent;
+/* border-color: #080808; */
+}
+
+@media screen and (max-width: 480px) { 
+	.starter-template {
+  	 		padding: 10px 10px;
+  	 	}
+	.pagination>li>a, 
+	.pagination>li>span {
+			font-size: 21px;
+			border: 0px;
+			padding: 6px 9px;
+		}
+		} 
+
+@media (max-width: 825px) {
+	}
+
+@media (max-width: 750px) {
+	 }
+
+/* codice per simulare vecchio bootstrap con i submenu */
+
+.dropdown-submenu {
+    position:relative;
+}
+.dropdown-submenu>.dropdown-menu {
+    top:50px;
+    left:0%;
+    margin-top:-6px;
+    margin-left:-1px;
+    -webkit-border-radius:0 6px 6px 6px;
+    -moz-border-radius:0 6px 6px 6px;
+    border-radius:0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+    display:block;
+}
+.dropdown-submenu>a:after {
+    display:block;
+    content:" ";
+    float:right;
+    width:0;
+    height:0;
+    border-color:transparent;
+  /*  border-style:solid; */
+    border-width:5px 0 5px 5px;
+    border-left-color:#cccccc;
+    margin-top:5px;
+    margin-right:-10px;
+}
+.dropdown-submenu:hover>a:after {
+    border-left-color:#ffffff;
+}
+.dropdown-submenu.pull-left {
+    float:none;
+}
+
+/* codice per simulare vecchio bootstrap con i submenu  fine */
