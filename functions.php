@@ -85,7 +85,7 @@ add_action( 'admin_notices', 'angularpress_dependencies' );
 function angularpress_dependencies() {
 
 global $pagenow;
-    if ( $pagenow == 'plugins.php' ) {
+    if ( $pagenow == 'plugins.php' | $pagenow == 'themes.php') {
 
         if(!is_plugin_active( 'json-rest-api/plugin.php' ))
 
