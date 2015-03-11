@@ -5,8 +5,12 @@ Installation:
 
 Install these two Wordpress plugins:
 
-Plugin JSON REST API 
+1) Plugin JSON REST API 
 
-Plugin JSON REST API Menu
+2) Plugin JSON REST API Menu
+
 
 Then clone this repository in wp-content/theme
+
+This is a very minimal theme built with bootstrap menu and angularjs framework.
+
