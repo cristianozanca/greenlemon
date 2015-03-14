@@ -124,5 +124,8 @@ $test = new Theme_Plugin_Dependency( 'json-rest-api', 'https://github.com/rmccue
 }
 
 
-
+function register_my_menu() {
+  register_nav_menu('Primary',__( 'Header Menu' ));
+}
+add_action( 'init', 'register_my_menu' );
 

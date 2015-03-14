@@ -30,8 +30,8 @@
   <script data-require="angular-resource@*" data-semver="1.2.14" src="<?php echo get_template_directory_uri(); ?>/js/angular-resource.js"></script>
    <script src="<?php echo get_template_directory_uri(); ?>/js/angular-animate.min.js"></script>
 <!-- loadingbar -->
-<script src="<?php echo get_template_directory_uri(); ?>/bower_components/angular-loading-bar/src/loading-bar.js"></script>
-<link href='<?php echo get_template_directory_uri(); ?>/bower_components/angular-loading-bar/src/loading-bar.css' rel='stylesheet' />
+<script src="<?php echo get_template_directory_uri(); ?>/js/angular-loading-bar/src/loading-bar.js"></script>
+<link href='<?php echo get_template_directory_uri(); ?>/js/angular-loading-bar/src/loading-bar.css' rel='stylesheet' />
 <!-- loadingbar -->
     <link href="<?php echo get_template_directory_uri(); ?>/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="<?php echo get_template_directory_uri(); ?>/css/prettify.css" rel="stylesheet">
