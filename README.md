@@ -28,6 +28,6 @@ This is a very minimal theme built with bootstrap menu and angularjs framework.
 [JSON REST API]:https://wordpress.org/plugins/json-rest-api/
 [JSON REST API Menu]:https://wordpress.org/plugins/wp-api-menus/
 [AngularJS]:http://angularjs.org
-[Wordpress]:http://www.wordpresss.com
+[Wordpress]:http://www.wordpress.org
 
 
