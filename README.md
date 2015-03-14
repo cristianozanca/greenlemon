@@ -11,7 +11,9 @@
 
 Installation:
 
-Git Clone in wp-content/theme
+First go in the Wordpress root directory
+
+Then Git Clone Angularpress in wp-content/theme
 
 ```sh
 $ cd wp-content/themes
@@ -27,7 +29,7 @@ Install these two Wordpress plugins:
   
 
 
-Set "primary" your menu's name in the Wordpress back-end
+In Appearance > Menus set "primary" your menu's name in the Wordpress back-end
 
 ![alt tag](https://github.com/altrovideo/angularpress/blob/master/assets/menu-wp.jpg)
 
