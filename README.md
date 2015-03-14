@@ -13,7 +13,7 @@ Installation:
 
 First go in the Wordpress root directory
 
-Then Git Clone Angularpress in wp-content/theme
+Then Git Clone Angularpress in wp-content/themes
 
 ```sh
 $ cd wp-content/themes
@@ -35,7 +35,7 @@ In Appearance > Menus set "primary" your menu's name in the Wordpress back-end
 
 
 
-Go to Settings > Permalink and select "Post Name"
+Go to Settings > Permalinks and select "Post Name"
 
 ![alt tag](https://github.com/altrovideo/angularpress/blob/master/assets/permalink.png)
 
