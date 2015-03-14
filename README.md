@@ -1,4 +1,8 @@
-# Angularpress
+![alt tag](https://github.com/altrovideo/angularpress/blob/master/assets/angularpress-logo.jpg)
+
+![alt tag](https://github.com/altrovideo/angularpress/blob/master/assets/angularpress-preview.jpg)
+
+
 
 [AngularJS] Minimal [Wordpress] Theme
 
@@ -12,7 +16,9 @@ Install these two Wordpress plugins:
   - Plugin [JSON REST API] 
   - Plugin [JSON REST API Menu]
 
-Set primary your menu's name in the Wordpress back-end 
+Set primary your menu's name in the Wordpress back-end
+
+![alt tag](https://github.com/altrovideo/angularpress/blob/master/assets/menu-wp.jpg)
 
 Then clone this repository in wp-content/theme
 
