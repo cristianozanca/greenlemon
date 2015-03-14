@@ -1,5 +1,5 @@
 
-$.getJSON('/wp-json/menus', function(data) {
+$.getJSON('wp-json/menus', function(data) {
 
     for (var i=0, len=data.length; i < len; i++)
              {
@@ -17,7 +17,7 @@ $.getJSON('/wp-json/menus', function(data) {
             //console.log(menuID);
 
 //load JSON MENU Wordpress con suo ID
-$.getJSON('/wp-json/menus/' + menuID, function(data) {
+$.getJSON('wp-json/menus/' + menuID, function(data) {
     
 //build menu
 var builddata = function () {

@@ -1,7 +1,7 @@
 // Recupero valori dall'header json per numero articoli totali per paginazione
 
 var req = new XMLHttpRequest();
-var URL = "/wp-json/posts";
+var URL =   'wp-json/posts';
 req.open('GET', URL, false);
 req.send(null);
 // se serve attivare max pagine dall Header con la riga qui sotto
@@ -53,7 +53,7 @@ articoliControllers.controller('ListaController', ['$scope', 'artperpagina', '$h
     if (value){
       $location.path("/page/" + value);
       // [ignore_sticky_posts] perché altrimenti si rompe la paginazione (n post per page)
-      $http.get('/wp-json/posts?filter[ignore_sticky_posts]=0&filter[posts_per_page]=' + $scope.itemsPerPage + '&page=' + value)
+      $http.get('wp-json/posts?filter[ignore_sticky_posts]=0&filter[posts_per_page]=' + $scope.itemsPerPage + '&page=' + value)
        .then(function(res){
           $scope.filteredArticoli = res.data; 
 
@@ -85,7 +85,7 @@ articoliControllers.controller('DettaglioController', ['$scope', 'artperpagina',
 //var paginaback = $routeParams.currentPage;
 $scope.paginaback = Number($routeParams.currentPage);  
 
-$http.get('/wp-json/posts?filter[ignore_sticky_posts]=1&filter[posts_per_page]=' + artperpagina.itemsPerPage + '&page=' + $routeParams.currentPage )
+$http.get('wp-json/posts?filter[ignore_sticky_posts]=1&filter[posts_per_page]=' + artperpagina.itemsPerPage + '&page=' + $routeParams.currentPage )
        .then(function(res){
           $scope.filteredArticoli = res.data; 
     $scope.whichItem = $routeParams.itemId;
@@ -126,7 +126,7 @@ $catnum = Number($routeParams.catID);
 //console.log($catnum);
 // porto ID categoria nel template
 $scope.catnumz = $catnum;
-$http.get('/wp-json/taxonomies/category/terms/' + $catnum + '').success(function(data){
+$http.get('wp-json/taxonomies/category/terms/' + $catnum + '').success(function(data){
     var count = data['count'];
     
   $scope.itemsPerPage = artperpagina.itemsPerPage;
@@ -169,7 +169,7 @@ $scope.isActive = function (viewLocation) {
     if (value){
       $location.path("/cat/" + $categoria + "/" + $catnum + "/page/" + value);
  
-  $http.get('/wp-json/posts?filter[posts_per_page]=' + artperpagina.itemsPerPage + '&filter[cat]='+ $catnum +'&page=' + value)
+  $http.get('wp-json/posts?filter[posts_per_page]=' + artperpagina.itemsPerPage + '&filter[cat]='+ $catnum +'&page=' + value)
 
   
 
@@ -220,7 +220,7 @@ $scope.paginaback = Number($routeParams.currentPage);
 
 //  INSERIRE CATEGORY NAME dopo [category_name]
 
-$http.get('/wp-json/posts?filter[cat]=' + $catnum + '&page=' + $routeParams.currentPage)
+$http.get('wp-json/posts?filter[cat]=' + $catnum + '&page=' + $routeParams.currentPage)
        .then(function(res){
           $scope.filteredCategorie = res.data; 
     $scope.whichItem = $routeParams.itemId;
@@ -260,7 +260,7 @@ articoliControllers.controller('DettaglioPAGController', ['$scope','$route', 'ar
 $scope.item_id = $routeParams.itemId;
 
 //carico il json della pagina 
-$http.get('/wp-json/posts/' + $scope.item_id )
+$http.get('wp-json/posts/' + $scope.item_id )
        .then(function(res){
           $scope.filteredPagina = res.data; 
 
