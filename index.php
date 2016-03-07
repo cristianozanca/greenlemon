@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:ng="http://angularjs.org" id="myApp" ng-app="myApp">
+<html xmlns:ng="http://angularjs.org" id="Angpress" ng-app="Angpress">
 <head>
 <meta charset="UTF-8">
 <!--[if lte IE 7]>
@@ -16,7 +16,7 @@
   // => [["Odd", "Even", "Odd"], "Odd", "Even", "Odd", "Even"]
 </script>
     <![endif]-->
-<title><?php bloginfo('name'); ?></title>
+<title><?php wp_title(); ?></title>
 
   <!--
   <link data-require="bootstrap-css@2.3.2" data-semver="2.3.2" rel="stylesheet" href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" />

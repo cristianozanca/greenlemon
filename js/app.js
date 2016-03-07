@@ -1,4 +1,4 @@
-var myApp = angular.module('myApp', [
+var Angpress = angular.module('Angpress', [
   'ngRoute',
   'articoliControllers',
   'ui.bootstrap',
@@ -9,7 +9,7 @@ var myApp = angular.module('myApp', [
 ]);
 
 
-myApp.config(['$routeProvider', function($routeProvider) {
+Angpress.config(['$routeProvider', function($routeProvider) {
   
   $routeProvider.
   when('/', {
