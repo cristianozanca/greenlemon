@@ -11,16 +11,9 @@
 
 Installation:
 
-First go in the Wordpress root directory
+Click "Donload ZIP" button on the top right menu of this page.
 
-Then Git Clone Angularpress in wp-content/themes
-
-```sh
-$ cd wp-content/themes
-$ git clone https://github.com/altrovideo/angularpress.git
-```
-
-Go to Appearance > Themes and activate Angularpress
+Go to Appearance > Themes and activate Angularpress.
 
 Install these two Wordpress plugins:
 
