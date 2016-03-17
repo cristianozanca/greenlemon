@@ -4,25 +4,18 @@
 
 
 
-[AngularJS] Minimal [Wordpress] Theme
+[AngularJS] Minimal [WordPress] Theme
 
 ### Version
 0.1.0
 
 Installation:
 
-First go in the Wordpress root directory
+Click "Donload ZIP" button on the top right menu of this page.
 
-Then Git Clone Angularpress in wp-content/themes
+Go to Appearance > Themes and activate AngularPress
 
-```sh
-$ cd wp-content/themes
-$ git clone https://github.com/altrovideo/angularpress.git
-```
-
-Go to Appearance > Themes and activate Angularpress
-
-Install these two Wordpress plugins:
+Install these two WordPress plugins:
 
   - Plugin [JSON REST API] 
   - Plugin [JSON REST API Menu]
@@ -48,6 +41,6 @@ This is a very minimal theme built with angularjs framework and bootstrap.
 [JSON REST API]:https://wordpress.org/plugins/json-rest-api/
 [JSON REST API Menu]:https://wordpress.org/plugins/wp-api-menus/
 [AngularJS]:http://angularjs.org
-[Wordpress]:http://www.wordpress.org
+[WordPress]:http://www.wordpress.org
 
 
