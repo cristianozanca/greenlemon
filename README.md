@@ -4,7 +4,7 @@
 
 
 
-[AngularJS] Minimal [WordPress] Theme
+[AngularJS] Minimal and very Experymental [WordPress] Theme, with many WP features still not working.
 
 ### Version
 0.1.0
