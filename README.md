@@ -1,6 +1,6 @@
-![alt tag](https://github.com/altrovideo/greentheme/blob/master/assets/greenlemon-theme.jpg)
+![alt tag](https://github.com/altrovideo/greentheme/assets/greenlemon-theme.jpg)
 
-![alt tag](https://github.com/altrovideo/greentheme/blob/master/assets/angularpress-preview.jpg)
+![alt tag](https://github.com/altrovideo/greentheme/assets/angularpress-preview.jpg)
 
 
 GreenTheme is a very experimental [WordPress] Theme based on [JSON REST API] using [AngularJS] and [BootStrap] , with many WP features still not working.
@@ -11,7 +11,7 @@ GreenTheme is a very experimental [WordPress] Theme based on [JSON REST API] usi
 
 Installation:
 
-1) Click "Donload ZIP" button on the top right menu of this page.
+1) Click "Download ZIP" button on the top right menu of this page.
 
 2) Rename the file from greentheme-master.zip to greentheme.zip
 
