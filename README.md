@@ -1,9 +1,9 @@
-![alt tag](https://github.com/altrovideo/angularpress/blob/master/assets/greenlemon-theme.jpg)
+![alt tag](https://github.com/altrovideo/greentheme/blob/master/assets/greenlemon-theme.jpg)
 
-![alt tag](https://github.com/altrovideo/angularpress/blob/master/assets/angularpress-preview.jpg)
+![alt tag](https://github.com/altrovideo/greentheme/blob/master/assets/angularpress-preview.jpg)
 
 
-AngularPress is a very experimental [WordPress] Theme based on [JSON REST API] using [AngularJS] and [BootStrap] , with many WP features still not working.
+GreenTheme is a very experimental [WordPress] Theme based on [JSON REST API] using [AngularJS] and [BootStrap] , with many WP features still not working.
 
 
 ### Version
@@ -13,9 +13,9 @@ Installation:
 
 1) Click "Donload ZIP" button on the top right menu of this page.
 
-2) Rename the file from angularpress-master.zip to angularpress.zip
+2) Rename the file from greentheme-master.zip to greentheme.zip
 
-3) Go to Appearance > Themes and activate AngularPress
+3) Go to Appearance > Themes and activate GreenTheme
 
 4) Install these two Wordpress plugins:
 
