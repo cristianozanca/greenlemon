@@ -1,4 +1,4 @@
-![alt tag](https://github.com/altrovideo/angularpress/blob/master/assets/benefits-of-green-lemon-2.jpg)
+![alt tag](https://github.com/altrovideo/angularpress/blob/master/assets/greenlemon-theme.jpg)
 
 ![alt tag](https://github.com/altrovideo/angularpress/blob/master/assets/angularpress-preview.jpg)
 
