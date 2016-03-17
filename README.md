@@ -1,6 +1,6 @@
-![alt tag](https://github.com/altrovideo/greentheme/assets/greenlemon-theme.jpg)
+![alt tag](https://github.com/altrovideo/greenlemon/blob/master/assets/greenlemon-theme.jpg)
 
-![alt tag](https://github.com/altrovideo/greentheme/assets/angularpress-preview.jpg)
+![alt tag](https://github.com/altrovideo/greenlemon/blob/master/assets/angularpress-preview.jpg)
 
 
 GreenTheme is a very experimental [WordPress] Theme based on [JSON REST API] using [AngularJS] and [BootStrap] , with many WP features still not working.
