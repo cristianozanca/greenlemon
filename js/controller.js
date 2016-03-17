@@ -1,4 +1,5 @@
 // Recupero valori dall'header json per numero articoli totali per paginazione
+//
 
 var req = new XMLHttpRequest();
 var URL =   'wp-json/posts';

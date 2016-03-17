@@ -44,6 +44,7 @@
 </head>
 
   <body>
+  <?php print wp_title(); ?>
   <!-- MENU BOOTSTRAP caricato dinamicamente da WP -->
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
@@ -82,6 +83,6 @@
     <script src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.min.js"></script>
      <script src="<?php echo get_template_directory_uri(); ?>/js/json-menu.js"></script>
 </div>
-    
+
   </body>
 </html>

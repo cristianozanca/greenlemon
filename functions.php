@@ -163,3 +163,10 @@ function register_my_menu() {
 }
 add_action( 'init', 'register_my_menu' );
 
+function remove_customizer_settings( $wp_customize ) {
+
+    $wp_customize->remove_section( 'static_front_page' );
+    $wp_customize->remove_control('blogdescription');
+}
+add_action( 'customize_register', 'remove_customizer_settings', 20 );
+
