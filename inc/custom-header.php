@@ -12,33 +12,33 @@ c<?php
  *
  * @link https://developer.wordpress.org/themes/functionality/custom-headers/
  *
- * @package angularpress
+ * @package greenlemon
  */
 
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses angularpress_header_style()
+ * @uses greenlemon_header_style()
  */
-function angularpress_custom_header_setup() {
-	add_theme_support( 'custom-header', apply_filters( 'angularpress_custom_header_args', array(
+function greenlemon_custom_header_setup() {
+	add_theme_support( 'custom-header', apply_filters( 'greenlemon_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => '000000',
 		'width'                  => 1000,
 		'height'                 => 250,
 		'flex-height'            => true,
-		'wp-head-callback'       => 'angularpress_header_style',
+		'wp-head-callback'       => 'greenlemon_header_style',
 	) ) );
 }
-add_action( 'after_setup_theme', 'angularpress_custom_header_setup' );
+add_action( 'after_setup_theme', 'greenlemon_custom_header_setup' );
 
-if ( ! function_exists( 'angularpress_header_style' ) ) :
+if ( ! function_exists( 'greenlemon_header_style' ) ) :
 /**
  * Styles the header image and text displayed on the blog.
  *
- * @see angularpress_custom_header_setup().
+ * @see greenlemon_custom_header_setup().
  */
-function angularpress_header_style() {
+function greenlemon_header_style() {
 	$header_text_color = get_header_textcolor();
 
 	/*

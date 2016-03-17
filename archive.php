@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package angularpress
+ * @package greenlemon
  */
 
 get_header(); ?>

@@ -17,7 +17,7 @@ Installation:
 
 3) Go to Appearance > Themes and activate GreenTheme
 
-4) Install these two Wordpress plugins:
+4) Install these two WordPress plugins:
 
   - Plugin [JSON REST API] 
   - Plugin [JSON REST API Menu]

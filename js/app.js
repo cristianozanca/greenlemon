@@ -13,19 +13,19 @@ Angpress.config(['$routeProvider', function($routeProvider) {
   
   $routeProvider.
   when('/', {
-    templateUrl: 'wp-content/themes/angularpress/template/list.html',
+    templateUrl: 'wp-content/themes/greenlemon/template/list.html',
     controller: 'ListaController',
     redirectTo: 'page/1'
   }).
 
   when('/page/:currentPage', {
-        templateUrl: 'wp-content/themes/angularpress/template/list.html',
+        templateUrl: 'wp-content/themes/greenlemon/template/list.html',
         controller: 'ListaController'
         
     }).
 
   when('/page/:currentPage/articolo/:itemId', {
-    templateUrl: 'wp-content/themes/angularpress/template/articolo.html',
+    templateUrl: 'wp-content/themes/greenlemon/template/articolo.html',
     controller: 'DettaglioController'
     
   }).
@@ -35,13 +35,13 @@ Angpress.config(['$routeProvider', function($routeProvider) {
 //////////////////////////////////// 
 
    when('/cat/:categoryy/:catID/page/:currentPage', {
-    templateUrl: 'wp-content/themes/angularpress/template/categoria.html',
+    templateUrl: 'wp-content/themes/greenlemon/template/categoria.html',
     controller: 'CategoriaController',
 
   }).
 
    when('/cat/:categoryy/:catID/page/:currentPage/articolo/:itemId', {
-    templateUrl: 'wp-content/themes/angularpress/template/articolo-cat.html',
+    templateUrl: 'wp-content/themes/greenlemon/template/articolo-cat.html',
     controller: 'DettagliocatController',
 
 }).
@@ -53,7 +53,7 @@ Angpress.config(['$routeProvider', function($routeProvider) {
 
 
    when('/pagina/:itemId', {
-    templateUrl: '/wp-content/themes/angularpress/template/articolo-pag.html',
+    templateUrl: '/wp-content/themes/greenlemon/template/articolo-pag.html',
     controller: 'DettaglioPAGController'    
     
   }). 
