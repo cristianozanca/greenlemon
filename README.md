@@ -4,7 +4,7 @@
 
 
 
-[AngularJS] Minimal and very Experimental [WordPress] Theme, with many WP features still not working.
+AngularPress is a very experimental [WordPress] Theme based on [JSON REST API] using [AngularJS] and [BootStrap] , with many WP features still not working.
 
 ### Version
 0.1.0
@@ -42,5 +42,5 @@ This is a very minimal theme built with angularjs framework and bootstrap.
 [JSON REST API Menu]:https://wordpress.org/plugins/wp-api-menus/
 [AngularJS]:http://angularjs.org
 [WordPress]:http://www.wordpress.org
-
+[BootStrap]:http://getbootstrap.com/
 
