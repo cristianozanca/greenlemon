@@ -7,7 +7,7 @@ GreenTheme is a very experimental [WordPress] Theme based on [JSON REST API] usi
 
 
 ### Version
-0.1.0
+0.6.0
 
 Installation:
 
@@ -19,9 +19,9 @@ Installation:
 
 4) Install these two WordPress plugins:
 
-  - Plugin [JSON REST API] 
+  - Plugin [JSON REST API]
   - Plugin [JSON REST API Menu]
-  
+
 5) In Appearance > Menus set "primary" your menu's name in the WordPress back-end
 
 ![alt tag](https://github.com/altrovideo/angularpress/blob/master/assets/menu-wp.jpg)
@@ -38,6 +38,3 @@ Installation:
 [AngularJS]:http://angularjs.org
 [WordPress]:http://www.wordpress.org
 [BootStrap]:http://getbootstrap.com/
-
-
-
