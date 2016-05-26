@@ -3,6 +3,55 @@
 if ( ! function_exists( 'greenlemon_setup' ) ) :
 
 function greenlemon_setup() {
+
+
+  function greenlemon_custom_scripts(){
+
+      // Register and Enqueue a Stylesheet
+      // get_template_directory_uri will look up parent theme location
+      wp_register_style( 'bootstrap-responsive', get_template_directory_uri() . '/css/bootstrap-responsive.css');
+      wp_enqueue_style( 'bootstrap-responsive' );
+      wp_register_style( 'bootstrap.min', get_template_directory_uri() . '/css/bootstrap.min.css');
+      wp_enqueue_style( 'bootstrap.min' );
+      wp_register_style( 'prettify', get_template_directory_uri() . '/css/prettify.css');
+      wp_enqueue_style( 'prettify' );
+      wp_register_style( 'style', get_template_directory_uri() . '/style.css');
+      wp_enqueue_style( 'style' );
+      wp_register_style( 'loading-bar.css', get_template_directory_uri() . '/js/angular-loading-bar/src/loading-bar.css');
+      wp_enqueue_style( 'loading-bar.css' );
+
+      // Register and Enqueue a Script
+      // get_stylesheet_directory_uri will look up child theme location
+      wp_register_script( 'jquery.min', get_stylesheet_directory_uri() . '/js/jquery.min.js', array());
+      wp_enqueue_script( 'jquery.min' );
+      wp_register_script( 'bootstrap.min.js', get_stylesheet_directory_uri() . '/js/bootstrap.min.js', array());
+      wp_enqueue_script( 'bootstrap.min.js' );
+      wp_register_script( 'json-menu', get_stylesheet_directory_uri() . '/js/json-menu.js', array());
+      wp_enqueue_script( 'json-menu' );
+      wp_register_script( 'angular.min', get_stylesheet_directory_uri() . '/js/angular.min.js', array());
+      wp_enqueue_script( 'angular.min' );
+      wp_register_script( 'angular-sanitize.min', get_stylesheet_directory_uri() . '/js/angular-sanitize.min.js', array());
+      wp_enqueue_script( 'angular-sanitize.min' );
+      wp_register_script( 'ui-bootstrap-tpls.min', get_stylesheet_directory_uri() . '/js/ui-bootstrap-tpls.min.js', array());
+      wp_enqueue_script( 'ui-bootstrap-tpls.min' );
+      wp_register_script( 'angular-route.min', get_stylesheet_directory_uri() . '/js/angular-route.min.js', array());
+      wp_enqueue_script( 'angular-route.min' );
+      wp_register_script( 'angular-resource', get_stylesheet_directory_uri() . '/js/angular-resource.js', array());
+      wp_enqueue_script( 'angular-resource' );
+      wp_register_script( 'angular-animate.min', get_stylesheet_directory_uri() . '/js/angular-animate.min.js', array());
+      wp_enqueue_script( 'angular-animate.min' );
+      wp_register_script( 'controller', get_stylesheet_directory_uri() . '/js/controller.js', array());
+      wp_enqueue_script( 'controller' );
+      wp_register_script( 'app', get_stylesheet_directory_uri() . '/js/app.js', array());
+      wp_enqueue_script( 'app' );
+      wp_register_script( 'loading-bar', get_stylesheet_directory_uri() . '/js/angular-loading-bar/src/loading-bar.js', array());
+      wp_enqueue_script( 'loading-bar' );
+
+
+  }
+
+  add_action('wp_enqueue_scripts', 'greenlemon_custom_scripts');
+
     /*
      * Make theme available for translation.
      * Translations can be filed in the /languages/ directory.
@@ -21,6 +70,24 @@ function greenlemon_setup() {
      * provide it for us.
      */
     add_theme_support( 'title-tag' );
+
+    $args = array(
+    	'flex-width'    => true,
+    	'width'         => 980,
+    	'flex-height'    => true,
+    	'height'        => 200,
+    	'default-image' => get_template_directory_uri() . '/img/greenlemon-theme.jpg',
+      'uploads'       => true,
+    );
+    add_theme_support( 'custom-header', $args );
+    register_default_headers( array(
+    	'default-image' => array(
+    		'url'           => get_template_directory_uri() . '/img/greenlemon-theme.jpg',
+    		'thumbnail_url' => get_template_directory_uri() . '/img/greenlemon-theme.jpg',
+    		'description'   => __( 'Default-image', 'greenlemon' )
+    	)
+    ) );
+
 
     /*
      * Enable support for Post Thumbnails on posts and pages.
@@ -169,4 +236,3 @@ function remove_customizer_settings( $wp_customize ) {
     $wp_customize->remove_control('blogdescription');
 }
 add_action( 'customize_register', 'remove_customizer_settings', 20 );
-
